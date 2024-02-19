@@ -1,0 +1,189 @@
+
+
+html {
+    background-color: rgb(217, 247, 247);
+}
+.titulo {
+    padding-left: 700px;
+}
+
+.titulo img {
+    height: 200px; 
+    width: 500px;  
+    margin-bottom:-40px;
+    margin-top: 40px;
+}
+
+
+.apartados h3 {
+
+    margin-right: 300px;
+    margin-left: 300px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.apartados h3  div {
+    padding: 8px; 
+    border: 1px solid rgb(148, 131, 38); 
+    border-radius: 70px; 
+}
+
+.apartados h3 div a {
+    text-decoration: none; 
+    color: black; 
+    color: rgb(94, 92, 92);
+  }
+
+  .Descargar {
+    position: relative;
+    top: 20px; 
+}
+
+.InformaciónYpreguntas{
+    position: relative;
+}
+
+ .Compatibilidad {
+    position: relative;
+    top: 20px; 
+ }
+
+ .ESports {
+    position: relative;
+    top: 40px; 
+ }
+
+ .Login {
+    position: relative;
+    top: 60px; 
+ }
+
+ .QueEs {
+    position: relative;
+    top: 60px; 
+ }
+
+ .CreateAccount {
+    position: relative;
+    top: 100px; 
+ }
+
+ 
+
+.imagen img {
+  height: 800px; 
+  width: 1550px; 
+  margin-left: 180px;
+  border-radius: 50%;
+
+}
+
+@media screen and (max-width: 480px) {
+    .apartados {
+        display: none; 
+        transition: all 1s linear; 
+    }
+
+    .menu-desplegable {
+        display: block; 
+        transition: all 1s linear; 
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .apartados {
+        margin-top: -90px;
+        weight: 400px;
+        height: 430px;
+        transition: all 1s linear; 
+    }
+
+    .apartados h3 {
+        flex-direction: column;
+        margin-bottom: 120px;
+        transition: all 1s linear; 
+    }
+
+
+    .apartados h3 .Compatibilidad {
+        margin-top: -30px;
+        margin-bottom: 18px;
+        transition: all 1s linear; 
+     }
+    
+     .apartados h3 .ESports {
+        margin-top: 10px;
+        margin-bottom: 18px;
+        transition: all 1s linear; 
+     }
+
+     .apartados h3 .Descargar {
+        margin-top: 10px;
+        margin-bottom: 18px;
+        transition: all 1s linear; 
+    }
+
+    .apartados h3 .InformaciónYpreguntas{
+        margin-top: 10px;
+        margin-bottom: 18px;
+        width: 290px;
+        transition: all 1s linear; 
+    }
+    
+     .apartados h3 .Login {
+        margin-top: -50px;
+        width: 60px;
+        transition: all 1s linear; 
+     }
+    
+     .apartados h3 .QueEs {
+        margin-top: 10px;
+        margin-bottom: 18px;
+        width: 220px;
+        transition: all 1s linear; 
+     }
+    
+     .apartados h3 .CreateAccount {
+        margin-top: -30px;
+        margin-bottom: 18px;
+        width: 130px;
+        transition: all 1s linear; 
+     }
+    
+
+    .imagen img {
+        height: 400px; 
+        width: 550px; 
+        margin-left: 80px;
+        border-radius: 50%;
+        transition: all 1s linear;
+    }
+
+    .titulo {
+        padding-left: 200px;
+        transition: all 1s linear;
+    }
+
+    .titulo img {
+        height: 150px; 
+        width: 300px;  
+        transition: all 1s linear;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        
+    }
+    
+}
+
+.apartados,
+.apartados h3,
+.imagen img,
+.titulo,
+.titulo img {
+    transition: all 1s linear; 
+}
