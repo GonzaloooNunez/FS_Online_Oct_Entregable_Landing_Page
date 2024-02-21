@@ -14,70 +14,108 @@ html {
     margin-top: 40px;
 }
 
-
-.apartados h3 {
-
+.apartados {
     margin-right: 300px;
     margin-left: 300px;
+    margin-top: 40px;
     align-items: center;
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
 
-
-.apartados h3  div {
-    padding: 8px; 
-    border: 1px solid rgb(148, 131, 38); 
-    border-radius: 70px; 
+.apartados button {
+    padding: 8px;
+    border: 1px solid rgb(148, 131, 38);
+    border-radius: 70px;
 }
 
-.apartados h3 div a {
-    text-decoration: none; 
-    color: black; 
-    color: rgb(94, 92, 92);
+.QueEs {
+    position: relative;
+    top: 220px;
+    left: -300px;
+}
+
+.ESports {
+    position: relative;
+    top: 100px;
+    left: -200px;
+}
+
+.Descargar {
+    position: relative;
+    top: 30px;
+    left: -100px;
+}
+
+.InformaciónYpreguntas {
+    position: relative;
+    top: 10px;
+}
+
+.Compatibilidad{
+    position: relative;
+    top: 40px;
+    left: 100px;
+}
+
+.Login{
+    position: relative;
+    top: 120px;
+    left: 200px;
+}
+
+.CreateAccount{
+    position: relative;
+    top: 230px;
+    left: 240px;
+}
+
+.dropdown button {
+    background-color: #c79d50; 
+    color:  white; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+  }
+  
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(230, 241, 241);
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 20%;
+    border: 3px solid #c79d50;
+    top: 100%;
+    left: 580px; 
+    font-family: Arial;
+    top:300px;
   }
 
-  .Descargar {
-    position: relative;
-    top: 20px; 
-}
-
-.InformaciónYpreguntas{
-    position: relative;
-}
-
- .Compatibilidad {
-    position: relative;
-    top: 20px; 
- }
-
- .ESports {
-    position: relative;
-    top: 40px; 
- }
-
- .Login {
-    position: relative;
-    top: 60px; 
- }
-
- .QueEs {
-    position: relative;
-    top: 60px; 
- }
-
- .CreateAccount {
-    position: relative;
-    top: 100px; 
- }
-
- 
+  .dropdown-content a {
+    color: black; 
+    padding: 12px 16px; 
+    text-decoration: none; 
+    display: block; 
+    border-color:  #c79d50;
+    border-radius: 23%;
+  }
+  
+  .dropdown.dropdown-content:hover {
+    display: block;
+    visibility: hidden; 
+  }
 
 .imagen img {
   height: 800px; 
   width: 1550px; 
   margin-left: 180px;
   border-radius: 50%;
+  position: relative;
+  top: 30px;
 
 }
 
@@ -86,72 +124,59 @@ html {
         display: none; 
         transition: all 1s linear; 
     }
-
-    .menu-desplegable {
-        display: block; 
-        transition: all 1s linear; 
-    }
 }
 
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
-    .apartados {
-        margin-top: -90px;
-        weight: 400px;
-        height: 430px;
-        transition: all 1s linear; 
-    }
 
-    .apartados h3 {
-        flex-direction: column;
-        margin-bottom: 120px;
-        transition: all 1s linear; 
-    }
-
-
-    .apartados h3 .Compatibilidad {
-        margin-top: -30px;
-        margin-bottom: 18px;
+    .apartados .Compatibilidad {
+        top: 0px;
+        left: -30px;
         transition: all 1s linear; 
      }
     
-     .apartados h3 .ESports {
+     .apartados .ESports {
         margin-top: 10px;
-        margin-bottom: 18px;
+        margin-bottom: 118px;
         transition: all 1s linear; 
+        left: -030px;
      }
 
-     .apartados h3 .Descargar {
-        margin-top: 10px;
-        margin-bottom: 18px;
+     .apartados .Descargar {
+        top: 33px;
+       left: -30px;
         transition: all 1s linear; 
     }
 
-    .apartados h3 .InformaciónYpreguntas{
-        margin-top: 10px;
-        margin-bottom: 18px;
+    .apartados .InformaciónYpreguntas{
+        top: 173px;
+        margin-bottom: 0px;
         width: 290px;
         transition: all 1s linear; 
+        left:-25px;
     }
     
-     .apartados h3 .Login {
-        margin-top: -50px;
-        width: 60px;
+     .apartados .Login {
+        top: 7px;
+        width: 90px;
         transition: all 1s linear; 
+        left:-30px;
      }
     
-     .apartados h3 .QueEs {
-        margin-top: 10px;
+     .apartados .QueEs {
+        top: 210px;
         margin-bottom: 18px;
         width: 220px;
+        left: -30px;
         transition: all 1s linear; 
      }
     
-     .apartados h3 .CreateAccount {
-        margin-top: -30px;
+     .apartados .CreateAccount {
+        top: 13px;
         margin-bottom: 18px;
         width: 130px;
+        left: -30px;
         transition: all 1s linear; 
      }
     
@@ -159,9 +184,11 @@ html {
     .imagen img {
         height: 400px; 
         width: 550px; 
+        top: -70px;
         margin-left: 80px;
         border-radius: 50%;
         transition: all 1s linear;
+        left: -10px;
     }
 
     .titulo {
@@ -176,9 +203,54 @@ html {
         margin-top: 30px;
         margin-bottom: 5px;
         
+    } 
+
+    .apartados {
+        flex-direction: column;
+        display: flex;
+        margin-top: -190px;
+        weight: 400px;
+        height: 430px;
+        transition: all 1s linear; 
+        margin-bottom: 120px;
     }
-    
+
+    .dropdown-content {
+        display: none; 
+        position: absolute; 
+        top: 200px; 
+        left: -300px;
+      }
 }
+
+
+
+.InformaciónYpreguntas {
+    position: relative;
+  }
+  
+  #dropdownInformaciónYpreguntas {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  #dropdownInformaciónYpreguntas li {
+    list-style: none;
+  }
+  
+  #dropdownInformaciónYpreguntas li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #toggleBtn {
+    cursor: pointer;
+  }
 
 .apartados,
 .apartados h3,
